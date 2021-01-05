@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Error 500 Server Error</title>
+</head>
+<body><h2>HTTP ERROR 500</h2>
+<p>Problem accessing /getPDF/Invoice_PNG. Reason:
+<pre>    Server Error</pre></p><h3>Caused by:</h3><pre>wiremock.com.google.common.util.concurrent.UncheckedExecutionException: wiremock.com.github.jknack.handlebars.HandlebarsException: inline@277b7e91:1:2: found: &apos;?&apos;
+{{?9?????g??@??w??L1,NU??j?^????G??a{y&quot;?u9?J?r??\o?tm6{?GC???)y?
+  ^
+
+	at wiremock.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2214)
+	at wiremock.com.google.common.cache.LocalCache.get(LocalCache.java:4053)
+	at wiremock.com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4899)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer.getTemplate(ResponseTemplateTransformer.java:221)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer.transform(ResponseTemplateTransformer.java:158)
+	at com.github.tomakehurst.wiremock.stubbing.InMemoryStubMappings.applyTransformations(InMemoryStubMappings.java:97)
+	at com.github.tomakehurst.wiremock.stubbing.InMemoryStubMappings.serveFor(InMemoryStubMappings.java:78)
+	at com.github.tomakehurst.wiremock.core.WireMockApp.serveStubFor(WireMockApp.java:204)
+	at com.github.tomakehurst.wiremock.http.StubRequestHandler.handleRequest(StubRequestHandler.java:53)
+	at com.github.tomakehurst.wiremock.http.AbstractRequestHandler.handle(AbstractRequestHandler.java:65)
+	at com.github.tomakehurst.wiremock.servlet.WireMockHandlerDispatchingServlet.service(WireMockHandlerDispatchingServlet.java:120)
+	at wiremock.javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at wiremock.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at wiremock.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at wiremock.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at wiremock.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at wiremock.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at wiremock.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at wiremock.org.eclipse.jetty.servlets.gzip.GzipHandler.handle(GzipHandler.java:479)
+	at wiremock.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at wiremock.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at wiremock.org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at wiremock.org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at wiremock.org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:258)
+	at wiremock.org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at wiremock.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at wiremock.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: wiremock.com.github.jknack.handlebars.HandlebarsException: inline@277b7e91:1:2: found: &apos;?&apos;
+{{?9?????g??@??w??L1,NU??j?^????G??a{y&quot;?u9?J?r??\o?tm6{?GC???)y?
+  ^
+
+	at wiremock.com.github.jknack.handlebars.internal.HbsErrorReporter.syntaxError(HbsErrorReporter.java:93)
+	at wiremock.org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParserFactory$2.notifyListeners(HbsParserFactory.java:148)
+	at wiremock.org.antlr.v4.runtime.Lexer.nextToken(Lexer.java:144)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.fetch(BufferedTokenStream.java:169)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.sync(BufferedTokenStream.java:152)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.consume(BufferedTokenStream.java:136)
+	at wiremock.org.antlr.v4.runtime.atn.ParserATNSimulator.execATN(ParserATNSimulator.java:537)
+	at wiremock.org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:393)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParser.body(HbsParser.java:216)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParser.template(HbsParser.java:165)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParserFactory$1.parse(HbsParserFactory.java:84)
+	at wiremock.com.github.jknack.handlebars.cache.NullTemplateCache.get(NullTemplateCache.java:54)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compile(Handlebars.java:475)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compileInline(Handlebars.java:435)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compileInline(Handlebars.java:415)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.HandlebarsOptimizedTemplate.uncheckedCompileTemplate(HandlebarsOptimizedTemplate.java:53)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.HandlebarsOptimizedTemplate.&lt;init&gt;(HandlebarsOptimizedTemplate.java:48)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer$2.call(ResponseTemplateTransformer.java:224)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer$2.call(ResponseTemplateTransformer.java:221)
+	at wiremock.com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4904)
+	at wiremock.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3628)
+	at wiremock.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2336)
+	at wiremock.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2295)
+	at wiremock.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2208)
+	... 27 more
+</pre>
+<h3>Caused by:</h3><pre>wiremock.com.github.jknack.handlebars.HandlebarsException: inline@277b7e91:1:2: found: &apos;?&apos;
+{{?9?????g??@??w??L1,NU??j?^????G??a{y&quot;?u9?J?r??\o?tm6{?GC???)y?
+  ^
+
+	at wiremock.com.github.jknack.handlebars.internal.HbsErrorReporter.syntaxError(HbsErrorReporter.java:93)
+	at wiremock.org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParserFactory$2.notifyListeners(HbsParserFactory.java:148)
+	at wiremock.org.antlr.v4.runtime.Lexer.nextToken(Lexer.java:144)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.fetch(BufferedTokenStream.java:169)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.sync(BufferedTokenStream.java:152)
+	at wiremock.org.antlr.v4.runtime.BufferedTokenStream.consume(BufferedTokenStream.java:136)
+	at wiremock.org.antlr.v4.runtime.atn.ParserATNSimulator.execATN(ParserATNSimulator.java:537)
+	at wiremock.org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:393)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParser.body(HbsParser.java:216)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParser.template(HbsParser.java:165)
+	at wiremock.com.github.jknack.handlebars.internal.HbsParserFactory$1.parse(HbsParserFactory.java:84)
+	at wiremock.com.github.jknack.handlebars.cache.NullTemplateCache.get(NullTemplateCache.java:54)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compile(Handlebars.java:475)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compileInline(Handlebars.java:435)
+	at wiremock.com.github.jknack.handlebars.Handlebars.compileInline(Handlebars.java:415)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.HandlebarsOptimizedTemplate.uncheckedCompileTemplate(HandlebarsOptimizedTemplate.java:53)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.HandlebarsOptimizedTemplate.&lt;init&gt;(HandlebarsOptimizedTemplate.java:48)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer$2.call(ResponseTemplateTransformer.java:224)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer$2.call(ResponseTemplateTransformer.java:221)
+	at wiremock.com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4904)
+	at wiremock.com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3628)
+	at wiremock.com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2336)
+	at wiremock.com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2295)
+	at wiremock.com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2208)
+	at wiremock.com.google.common.cache.LocalCache.get(LocalCache.java:4053)
+	at wiremock.com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4899)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer.getTemplate(ResponseTemplateTransformer.java:221)
+	at com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer.transform(ResponseTemplateTransformer.java:158)
+	at com.github.tomakehurst.wiremock.stubbing.InMemoryStubMappings.applyTransformations(InMemoryStubMappings.java:97)
+	at com.github.tomakehurst.wiremock.stubbing.InMemoryStubMappings.serveFor(InMemoryStubMappings.java:78)
+	at com.github.tomakehurst.wiremock.core.WireMockApp.serveStubFor(WireMockApp.java:204)
+	at com.github.tomakehurst.wiremock.http.StubRequestHandler.handleRequest(StubRequestHandler.java:53)
+	at com.github.tomakehurst.wiremock.http.AbstractRequestHandler.handle(AbstractRequestHandler.java:65)
+	at com.github.tomakehurst.wiremock.servlet.WireMockHandlerDispatchingServlet.service(WireMockHandlerDispatchingServlet.java:120)
+	at wiremock.javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at wiremock.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at wiremock.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at wiremock.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at wiremock.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at wiremock.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at wiremock.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at wiremock.org.eclipse.jetty.servlets.gzip.GzipHandler.handle(GzipHandler.java:479)
+	at wiremock.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at wiremock.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at wiremock.org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at wiremock.org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at wiremock.org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:258)
+	at wiremock.org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at wiremock.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at wiremock.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+<hr><i><small>Powered by Jetty://</small></i><hr/>
+
+</body>
+</html>

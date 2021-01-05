@@ -1,0 +1,35 @@
+ {
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/geolocatestub1/101.12.123.23"
+      },
+      "response": 
+ {
+ "status": 200,
+ "fixedDelayMilliseconds": 1000,
+ "headers":
+ {
+ "Content-Type" : "application/json"
+ },
+ "body": "{\"continentStub1\":\"EuropeStub1\",\"alpha2\":\"DE\",\"country_code\":\"49\",\"international_prefix\":\"00\",\"name\":\"Germany\",\"languages_spoken\":[\"de\"],\"geo\":{\"latitude\":51.16569,\"longitude\":10.451526},\"currency_code\":\"EUR\"}"
+ }
+    },
+    {
+      "request": {
+        "url": "/geolocatestub2/101.12.123.23"
+      },
+      "response": 
+	  {
+ "status": 200,
+ "fixedDelayMilliseconds": 1000,
+ "headers":
+ {
+ "Content-Type" : "application/json"
+ },
+ "body": "{\"continentStub2\":\"EuropeStub2\",\"alpha2\":\"DE\",\"country_code\":\"49\",\"international_prefix\":\"00\",\"name\":\"Germany\",\"languages_spoken\":[\"de\"],\"geo\":{\"latitude\":51.16569,\"longitude\":10.451526},\"currency_code\":\"EUR\"}"
+ }
+    }
+  ]
+}

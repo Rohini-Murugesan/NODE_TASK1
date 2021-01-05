@@ -1,0 +1,14 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/getInvoice"
+    },
+    "response": {
+        "status": 200,
+		"headers":
+		{
+		"Content-Type" : "application/pdf"
+		},
+        "bodyFileName": "\\invoice.pdf"
+    }
+}

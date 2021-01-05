@@ -1,0 +1,30 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPattern": "/",
+		"headers": {
+      "content-type": {
+        "equalTo": "application/json"
+      },
+	  "accept": {
+        "equalTo": "application/json"
+      },
+	  	  "x-rapidapi-host": {
+        "equalTo": "com"
+      },
+	  	  "x-rapidapi-key": {
+        "equalTo": "4394397bdbmsh2e231f48b7e0417p189f16jsn8080b6995f80"
+      }
+    },
+		"bodyPatterns":[{
+ "equalToJson" : "{\"mobile\": 9999999999}"
+ }]
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"lat\":28.61,\"lon\":77.23,\"circle\":\"Delhi Metro Telecom Circle (includes NCR, Faridabad, Ghaziabad, Gurgaon and Noida)\",\"operator\":\"Vodafone\",\"circle_code\":\"DL\",\"operator_code\":\"VF\",\"operator_company\":\"Vodafone India Ltd\",\"mobile\":9999999999}",
+        "headers": {
+            "Content-Type": "text/plain"
+        }
+    }
+}

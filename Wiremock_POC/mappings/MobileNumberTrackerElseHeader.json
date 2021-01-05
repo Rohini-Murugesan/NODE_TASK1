@@ -1,0 +1,30 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPattern": "/tracknumber/else",
+		 "headers": {
+      "content-type": {
+        "equalTo": "application/json"
+      },
+	  "accept": {
+        "matches": ".*/xml"
+      },
+	  	  "x-rapidapi-host": {
+        "equalTo": "com"
+      },
+	  	  "x-rapidapi-key": {
+        "equalTo": "4394397bdbmsh2e231f48b7e0417p189f16jsn8080b6995f80"
+      }
+    },
+		"bodyPatterns":[{
+ "equalToJson" : "{\"mobile\": 9999999999}"
+ }]
+    },
+    "response": {
+        "status": 404,
+        "body": "OOPS!! failed!! BUT HEYYY HEADER MATCHED!!",
+        "headers": {
+            "Content-Type": "text/plain"
+        }
+    }
+}

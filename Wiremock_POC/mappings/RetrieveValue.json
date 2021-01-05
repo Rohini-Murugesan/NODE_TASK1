@@ -1,0 +1,15 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPattern": "/getPDF/(.*)"
+    },
+    "response": {
+        "status": 200,
+		"headers":
+		{
+		"Content-Type" : "application/pdf"
+		},
+        "bodyFileName": "\\{{{request.requestLine.pathSegments.[1]}}}.pdf",
+		"transformers": ["response-template"]
+    }
+}
