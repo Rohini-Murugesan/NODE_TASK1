@@ -5,7 +5,7 @@ const express = require("express")
 const app = express()
 app.use(express.json()) //middleware
 const port = 3000 || process.env.PORT
-filesPath = "D:\\Wiremock_POC\\"
+filesPath = ".\\Wiremock_POC\\"
 app.get('/', (request, response) => {  
     response.send("WELCOME")
 
