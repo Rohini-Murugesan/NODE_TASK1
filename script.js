@@ -10,7 +10,6 @@ const port = process.env.PORT || 3000;
 filesPath = ".\\Wiremock_POC\\"
 app.get('/', (request, response) => {  
     response.send("WELCOME")
-    console.log(filesPath)
 })
 
 
@@ -29,7 +28,6 @@ let getDetails = (filepath,output) => {
 
 //get
 app.get('/list', (request, response) => { 
-    console.log("Here")
     filenames = fs.readdirSync(filesPath) 
     let output = "<div><ol>"
     filenames.forEach((file) => {
