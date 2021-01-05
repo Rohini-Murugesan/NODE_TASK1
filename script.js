@@ -2,9 +2,11 @@ const os = require("os")
 const fs = require("fs")
 const path = require("path")
 const express = require("express")
+const dotenv = require("dotenv")
 const app = express()
 app.use(express.json()) //middleware
-const port = 3000 || process.env.PORT
+dotenv.config()
+const port = process.env.PORT || 3000;
 filesPath = ".\\Wiremock_POC\\"
 app.get('/', (request, response) => {  
     response.send("WELCOME")
